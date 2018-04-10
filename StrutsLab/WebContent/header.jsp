@@ -21,6 +21,7 @@
                 class="am-icon-bars"></i></button>
         <nav>
         <ul class="header-nav-ul am-collapse am-in">
+<!--         首页链接 -->
             <li class="on"><a href="index" name="index">首页</a></li>
             <li           ><a href="about" name="about">关于我们</a></li>
             <li><a href="productlist" name="show">案例展示</a></li>
