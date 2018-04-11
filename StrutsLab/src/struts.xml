@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC   
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+ "http://struts.apache.org/dtds/struts-2.3.dtd" >  
+<struts>  
+    <package name="default" extends="struts-default">  
+        <action name="index" >  
+            <result>/index.jsp</result>  
+        </action> 
+        
+        <action name="about" >  
+            <result>/about.jsp</result>  
+        </action> 
+        
+        <action name="productlist" >  
+            <result>/productlist.jsp</result>  
+        </action> 
+        
+        <action name="contact" >  
+            <result>/contact.jsp</result>  
+        </action> 
+        
+        <action name="article_list" >  
+            <result>/article_list.jsp</result>  
+        </action> 
+        
+        <action name="footer" >  
+            <result>/footer.jsp</result>  
+        </action> 
+        <action name="header" >  
+            <result>/header.jsp</result>  
+        </action> 
+    </package> 
+
+</struts>
