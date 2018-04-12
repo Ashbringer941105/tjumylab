@@ -28,7 +28,7 @@ public class DataBaseDao {
 			e.printStackTrace();
 		}
 		// 我个人的mysql数据库的端口号  user是数据库的名称。需要修改
-		String url = "jdbc:mysql://localhost:3306/user";
+		String url = "jdbc:mysql://localhost:3306/a214";
 		//mysql的用户名和密码
 		String db_username = "root";
 		String db_password = "";
@@ -53,8 +53,7 @@ public class DataBaseDao {
 		try{
 			stmt = conn.createStatement();
 		}catch(SQLException e){
-			e.printStackTrace();
-			
+			e.printStackTrace();	
 		}
 		//执行结果
 		ResultSet rs1 = null;
@@ -75,7 +74,7 @@ public class DataBaseDao {
 	 * @param pstmt
 	 * @param rs
 	 */
-	public void closeAll(Connection conn,PreparedStatement pstmt, ResultSet rs) {
+	public void closeAll(Connection conn,Statement pstmt, ResultSet rs) {
 		
 		if (rs != null) {
 			try {

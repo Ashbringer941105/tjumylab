@@ -1,5 +1,12 @@
 package com.lab.bean;
 
+/**
+ * @date 2018.4.12
+ * @author 宋宗垚
+ * 实验室活动类
+ *
+ */
+
 public class Activity {
 	private int id;
 	private String name;

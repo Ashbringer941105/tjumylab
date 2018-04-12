@@ -1,5 +1,10 @@
 package com.lab.bean;
 
+/**
+ * @date 2018.4.12
+ * @author 宋宗垚
+ *	论文类
+ */
 public class Paper {
 	private int id;
 	private String name;

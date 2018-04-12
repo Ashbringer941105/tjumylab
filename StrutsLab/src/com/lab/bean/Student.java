@@ -21,21 +21,21 @@ public class Student {
 	private String name;
 	private String gender;
 	private String imagePath;
-	private String homePagePath;
-	private String graduateinfo;
+	private String homePage;
+	private String graduateInfo;
 	
 	 
-	public String isGraduateinfo() {
-		return graduateinfo;
+	public String isGraduateInfo() {
+		return graduateInfo;
 	}
-	public void setGraduateinfo(String graduateinfo) {
-		this.graduateinfo = graduateinfo;
+	public void setGraduateInfo(String graduateInfo) {
+		this.graduateInfo = graduateInfo;
 	}
-	public String getHomePagePath() {
-		return homePagePath;
+	public String getHomePage() {
+		return homePage;
 	}
-	public void setHomePagePath(String homePagePath) {
-		this.homePagePath = homePagePath;
+	public void setHomePage(String homePage) {
+		this.homePage = homePage;
 	}
 	public int getId() {
 		return id;

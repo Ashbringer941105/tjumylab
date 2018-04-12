@@ -4,7 +4,7 @@
  "http://struts.apache.org/dtds/struts-2.3.dtd" >  
 <struts>  
     <package name="default" extends="struts-default">  
-        <action name="index" >  
+        <action name="index" class="com.lab.action.IndexAction">  
             <result>/index.jsp</result>  
         </action> 
         
@@ -12,8 +12,8 @@
             <result>/about.jsp</result>  
         </action> 
         
-        <action name="productlist" >  
-            <result>/productlist.jsp</result>  
+        <action name="memberlist" class="com.lab.action.MemberlistAction">  
+            <result>/memberlist.jsp</result>  
         </action> 
         
         <action name="contact" >  
