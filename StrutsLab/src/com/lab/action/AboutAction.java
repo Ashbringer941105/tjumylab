@@ -26,6 +26,8 @@ public class AboutAction extends ActionSupport {
 		ResultSet rs = db.findSQL(connection, sql);
 		//然后对rs中的数据进行接收和处理
 		
+		//然后把得到结果存入Peopel或者Project向量中。
+		//然后放到ActionContext ac中，这样就可以在jsp文件中获得
 		
 		return SUCCESS;
 	}

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>某某家具设计公司企业官网-模板之家</title>
+    <title>高维信息处理实验室</title>
     ﻿<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="format-detection" content="telephone=no">
