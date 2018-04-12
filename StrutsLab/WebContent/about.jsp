@@ -48,8 +48,8 @@
 <section class="about-section">
     <div>
         <span>
-            <article>公司介绍</article>
-            <h6>COMPANY INTRODUCTION</h6>
+            <article>实验室介绍</article>
+            <h6>LABORATORY INTRODUCTION</h6>
         </span>
         <span></span>
     </div>
@@ -73,45 +73,57 @@
             <img src="images/banner4.jpg" alt="">
         </div>
         <div class="about-rightbox">
-            <h1>企业文化</h1>
-            <p>CORPORATE CULTURE</p>
+            <h1>实验室文化</h1>
+            <p>LABORATORY CULTURE</p>
+            <article>我们的家居一直秉承绿色的核心理念，以“贴近生活、用心服务、用爱做事”为企业核心文化价值。所有家具确保以最环保、安全、绿色为基础色调和核心基因，全心全意为您打造一个安全的、贴心的、精致的生活空间，环保、安全、精致不仅是对产品的用心打造，更是对员工、事业伙伴、用户、社会的责任和担当。</article>
+        </div>
+    </div>
+    </br></br></br>
+    
+    <div class="about-box">
+        <div class="about-leftbox">
+            <img src="images/banner4.jpg" alt="">
+        </div>
+        <div class="about-rightbox">
+            <h1>实验室活动</h1>
+            <p>LABORATORY ACTIVITY</p>
             <article>我们的家居一直秉承绿色的核心理念，以“贴近生活、用心服务、用爱做事”为企业核心文化价值。所有家具确保以最环保、安全、绿色为基础色调和核心基因，全心全意为您打造一个安全的、贴心的、精致的生活空间，环保、安全、精致不仅是对产品的用心打造，更是对员工、事业伙伴、用户、社会的责任和担当。</article>
         </div>
     </div>
 
-    <div class="about-team">
-        <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
-            <p >设计团队</p>
-            <span>DESIGN TEAM</span>
-        </div>
-        <div class="about-team-headimg">
-        <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
-            <img src="images/team1.png" alt="">
-            <p>史密斯KIM</p>
-            <span>首席金牌设计师</span>
-        </div>
-        <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
-            <img src="images/team2.png" alt="">
-            <p>刘凯丽</p>
-            <span>首席金牌设计师</span>
-        </div>
-        <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
-            <img src="images/team3.png" alt="">
-            <p>小李子</p>
-            <span>首席金牌设计师</span>
-        </div>
-        <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
-            <img src="images/team4.png" alt="">
-            <p>Lisa</p>
-            <span>首席金牌设计师</span>
-        </div>
-        </div>
-        <div class="about-slogan">
-            <div>
-            <p></p>
-            </div>
-        </div>
-    </div>
+<!--     <div class="about-team"> -->
+<!--         <div class="am-u-sm-12 am-u-md-12 am-u-lg-12"> -->
+<!--             <p >设计团队</p> -->
+<!--             <span>DESIGN TEAM</span> -->
+<!--         </div> -->
+<!--         <div class="about-team-headimg"> -->
+<!--         <div class="am-u-sm-12 am-u-md-6 am-u-lg-3"> -->
+<!--             <img src="images/team1.png" alt=""> -->
+<!--             <p>史密斯KIM</p> -->
+<!--             <span>首席金牌设计师</span> -->
+<!--         </div> -->
+<!--         <div class="am-u-sm-12 am-u-md-6 am-u-lg-3"> -->
+<!--             <img src="images/team2.png" alt=""> -->
+<!--             <p>刘凯丽</p> -->
+<!--             <span>首席金牌设计师</span> -->
+<!--         </div> -->
+<!--         <div class="am-u-sm-12 am-u-md-6 am-u-lg-3"> -->
+<!--             <img src="images/team3.png" alt=""> -->
+<!--             <p>小李子</p> -->
+<!--             <span>首席金牌设计师</span> -->
+<!--         </div> -->
+<!--         <div class="am-u-sm-12 am-u-md-6 am-u-lg-3"> -->
+<!--             <img src="images/team4.png" alt=""> -->
+<!--             <p>Lisa</p> -->
+<!--             <span>首席金牌设计师</span> -->
+<!--         </div> -->
+<!--         </div> -->
+<!--         <div class="about-slogan"> -->
+<!--             <div> -->
+<!--             <p></p> -->
+<!--             </div> -->
+<!--         </div> -->
+<!--     </div> -->
 </section>
 
 <div id="footer">
