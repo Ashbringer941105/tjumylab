@@ -52,7 +52,7 @@
         <span></span>
     </div>
     <div class="index-content">
-        <section class="index-content-section-first"><div><img src="images/sectionbanner.png" alt=""></div> </section>
+        <section class="index-content-section-first"><div><img src="images/labg.jpg" alt=""></div> </section>
         <section class="index-content-section-second">
             <div>
                 <div class="index-auto">
