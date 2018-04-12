@@ -1,20 +1,11 @@
 package com.lab.bean;
 
-/**
- * @date 2018.4.11
- * @author 宋宗垚
- *	项目或者论文类，应该与数据库中的项目和论文信息相匹配
- *	属性：
- *	id、
- *	 名字、
- *	简介、
- *	图片路径
- */
-public class Project {
+public class Paper {
 	private int id;
 	private String name;
-	private String introduction;
+	private String author;
 	private String imagePath;
+	private String introduction;
 	private String link;
 	private String date;
 	public int getId() {
@@ -29,17 +20,23 @@ public class Project {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getIntroduction() {
-		return introduction;
+	public String getAuthor() {
+		return author;
 	}
-	public void setIntroduction(String introduction) {
-		this.introduction = introduction;
+	public void setAuthor(String author) {
+		this.author = author;
 	}
 	public String getImagePath() {
 		return imagePath;
 	}
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
+	}
+	public String getIntroduction() {
+		return introduction;
+	}
+	public void setIntroduction(String introduction) {
+		this.introduction = introduction;
 	}
 	public String getLink() {
 		return link;
