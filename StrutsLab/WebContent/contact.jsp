@@ -48,7 +48,7 @@
     <header class="header-article-list">
         <div class="contact-left">联系我们</div>
         <div class="contact-right">
-            <a href="index.html">首页 </a>&#62;<a href="#">联系我们</a>
+            <a href="index">首页 </a>&#62;<a href="contact">联系我们</a>
         </div>
     </header>
 

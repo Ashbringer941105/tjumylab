@@ -7,7 +7,7 @@
             <div class="header-logo "><img src="images/logo.jpg" alt=""></div>
             <div class="header-title div-inline">
                 <strong style="font-size:40px">高维信息处理实验室</strong>
-                <span>www.cssmoban.com</span>
+                <span>http://localhost:8080/StrutsLab/index</span>
             </div>
 
 <!--             <div class="search-box div-inline"> -->
@@ -27,10 +27,10 @@
             <li><a href="productlist" name="show">实验室成员</a></li>
             <li><a href="article_list" name="new">论文及项目</a></li>
             <li><a href="contact" name="message">联系我们</a>
-                <div class="secondary-menu">
+<!--                 <div class="secondary-menu"> -->
 
-                    <ul><li><a href="message.html" class="message"></a></li></ul>
-                </div>
+<!--                     <ul><li><a href="message.html" class="message"></a></li></ul> -->
+<!--                 </div> -->
             </li>
         </ul>
         
