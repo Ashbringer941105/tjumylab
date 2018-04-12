@@ -10,10 +10,10 @@
                 <span>www.cssmoban.com</span>
             </div>
 
-            <div class="search-box div-inline">
-                <div class="input-box"><input type="text" name="" placeholder="             请输入关键字"></div>
-                <div class="search-botton"></div>
-            </div>
+<!--             <div class="search-box div-inline"> -->
+<!--                 <div class="input-box"><input type="text" name="" placeholder="             请输入关键字"></div> -->
+<!--                 <div class="search-botton"></div> -->
+<!--             </div> -->
         </div>
     </div>
     <div class="header-nav">
@@ -23,9 +23,9 @@
         <ul class="header-nav-ul am-collapse am-in">
 <!--         首页链接 -->
             <li class="on"><a href="index" name="index">首页</a></li>
-            <li           ><a href="about" name="about">关于我们</a></li>
-            <li><a href="productlist" name="show">案例展示</a></li>
-            <li><a href="article_list" name="new">新闻资讯</a></li>
+            <li           ><a href="about" name="about">实验室简介</a></li>
+            <li><a href="productlist" name="show">实验室成员</a></li>
+            <li><a href="article_list" name="new">论文及项目</a></li>
             <li><a href="contact" name="message">联系我们</a>
                 <div class="secondary-menu">
 
@@ -33,10 +33,7 @@
                 </div>
             </li>
         </ul>
-
-
-
-
+        
         </nav>
     </div>
 
