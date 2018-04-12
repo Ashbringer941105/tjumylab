@@ -48,9 +48,9 @@
     <header class="header-article-list">
         <div class="article-position">论文</div>
         <ul>
-<!--             <li><a href="article_list.html">行业新闻</a></li> -->
-<!--             <li><a href="article_list.html">家居百科</a></li> -->
-<!--             <li><a href="article_list.html">公司新闻</a></li> -->
+            <li><a href="article_list.html">行业新闻</a></li>
+            <li><a href="article_list.html">家居百科</a></li>
+            <li><a href="article_list.html">公司新闻</a></li>
         </ul>
         <div class="article-more-btn">
 <!--             <a href="article_list_more.html">MORE &#62; &#62;</a> -->
