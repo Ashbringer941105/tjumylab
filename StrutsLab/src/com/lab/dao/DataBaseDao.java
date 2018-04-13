@@ -8,17 +8,39 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * @date 2018.04.11
- * @author 宋宗垚
- *	数据库连接类
- *	有三个函数，一个是getConnection()获得连接
- *	第二个是executeSQL输入连接和sql语句执行sql语句返回结果
- * 	第三个是closeAll关闭所有相关连接
+ * 
+* Copyright: Copyright (c) 2018 songzongyao
+* 
+* @ClassName: DataBaseDao.java
+* @Description: 该类的功能描述
+*
+* @version: v1.0.0
+* @author: songzongyao
+* @date: 2018年4月13日 上午9:32:12 
+*
+* Modification History:
+* Date         Author          Version            Description
+*---------------------------------------------------------*
+* 2018年4月13日     songzongyao           v1.0.0               修改原因
  */
 public class DataBaseDao {
-	// 获取数据库连接的函数
+	
 	/**
-	 * @return 返回一个java.sql.Connection类的连接实例
+	 * 
+	* @Function: DataBaseDao.java
+	* @Description: 获得数据库连接的函数。如果改变了数据库的使用者，需要在此函数中更改数据库连接信息
+	*
+	* @return：返回Connection conn一个数据库连接
+	* @throws：异常描述
+	*
+	* @version: v1.0.0
+	* @author: songzongyao
+	* @date: 2018年4月13日 上午9:35:26 
+	*
+	* Modification History:
+	* Date         Author          Version            Description
+	*---------------------------------------------------------*
+	* 2018年4月13日     songzongyao           v1.0.0               新建函数
 	 */
 	public Connection getConnection() {
 		
@@ -41,11 +63,26 @@ public class DataBaseDao {
 		}
 		return conn;
 	}
+
+
 	/**
-	 * 查询方法
-	 * @param conn为java.sql.Connection类的连接实例。可以通过getConnection()函数得到
-	 * @param sql为需要执行的查询sql语句
-	 * @return 返回一个java.sql.ResultSet类型的sql语句执行结果
+	 * 
+	* @Function: DataBaseDao.java
+	* @Description: 根据sql语句执行查询，并将查询结果返回
+	*
+	* @param:Connection conn 数据库连接
+	* @param：String sql 需要执行的sql语句
+	* @return：ResultSet rs1 数据库查询结果的类型
+	* @throws：异常描述
+	*
+	* @version: v1.0.0
+	* @author: songzongyao
+	* @date: 2018年4月13日 上午9:33:12 
+	*
+	* Modification History:
+	* Date         Author          Version            Description
+	*---------------------------------------------------------*
+	* 2018年4月13日     songzongyao           v1.0.0               修改原因
 	 */
 	public ResultSet findSQL(Connection conn,String sql){
 		
@@ -68,12 +105,7 @@ public class DataBaseDao {
 	}
 
 	
-	/**
-	 * 关闭连接的方法 每次使用之该类之后，都使用这个方法关闭连接
-	 * @param conn为java.sql.Connection类的连接实例。可以通过getConnection()函数得到
-	 * @param pstmt
-	 * @param rs
-	 */
+	//关闭数据库连接的函数，暂时不太适用。先放在这里
 	public void closeAll(Connection conn,Statement pstmt, ResultSet rs) {
 		
 		if (rs != null) {
