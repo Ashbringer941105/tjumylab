@@ -65,7 +65,7 @@
                     <p>2017/05</p>
                 </div>
                 <div class="article-info">
-                    <a href="article_list_content.html">
+                    <a href="article_list_content">
                         <h3>家具有哪些类型?</h3>
                         <p>按家具从风格上可以分为：现代家具、欧式古典家具、美式家具、中式古典家具（也就是红木家具），还有近两年比较流行的新古典...</p>
                     </a>
@@ -78,7 +78,7 @@
                     <p>2017/05</p>
                 </div>
                 <div class="article-info">
-                    <a href="article_list_content.html">
+                    <a href="article_list_content">
                         <h3>家具有哪些类型?</h3>
                         <p>按家具从风格上可以分为：现代家具、欧式古典家具、美式家具、中式古典家具（也就是红木家具），还有近两年比较流行的新古典...</p>
                     </a>
@@ -90,7 +90,7 @@
                     <p>2017/05</p>
                 </div>
                 <div class="article-info">
-                    <a href="article_list_content.html">
+                    <a href="article_list_content">
                         <h3>家具有哪些类型?</h3>
                         <p>按家具从风格上可以分为：现代家具、欧式古典家具、美式家具、中式古典家具（也就是红木家具），还有近两年比较流行的新古典...</p>
                     </a>
@@ -102,7 +102,7 @@
                     <p>2017/05</p>
                 </div>
                 <div class="article-info">
-                    <a href="article_list_content.html">
+                    <a href="article_list_content">
                         <h3>家具有哪些类型?</h3>
                         <p>按家具从风格上可以分为：现代家具、欧式古典家具、美式家具、中式古典家具（也就是红木家具），还有近两年比较流行的新古典...</p>
                     </a>
@@ -114,7 +114,7 @@
                     <p>2017/05</p>
                 </div>
                 <div class="article-info">
-                    <a href="article_list_content.html">
+                    <a href="article_list_content">
                         <h3>家具有哪些类型?</h3>
                         <p>按家具从风格上可以分为：现代家具、欧式古典家具、美式家具、中式古典家具（也就是红木家具），还有近两年比较流行的新古典...</p>
                     </a>
@@ -126,7 +126,7 @@
                     <p>2017/05</p>
                 </div>
                 <div class="article-info">
-                    <a href="article_list_content.html">
+                    <a href="article_list_content">
                         <h3>家具有哪些类型?</h3>
                         <p>按家具从风格上可以分为：现代家具、欧式古典家具、美式家具、中式古典家具（也就是红木家具），还有近两年比较流行的新古典...</p>
                     </a>

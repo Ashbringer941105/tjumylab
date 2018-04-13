@@ -31,7 +31,7 @@ public class DataBaseDao {
 		String url = "jdbc:mysql://localhost:3306/a214";
 		//mysql的用户名和密码
 		String db_username = "root";
-		String db_password = "";
+		String db_password = "123";
 		
 		Connection conn = null;
 		try {
