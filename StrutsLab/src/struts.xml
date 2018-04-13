@@ -8,8 +8,8 @@
             <result>/index.jsp</result>  
         </action> 
         
-        <action name="about" >  
-            <result>/about.jsp</result>  
+        <action name="activity" class="com.lab.action.ActivityAction" >  
+            <result>/activity.jsp</result>  
         </action> 
         
         <action name="memberlist" class="com.lab.action.MemberlistAction">  

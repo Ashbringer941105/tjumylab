@@ -23,7 +23,7 @@
         <ul class="header-nav-ul am-collapse am-in">
 <!--         首页链接 -->
             <li class="on"><a href="index" name="index">首页</a></li>
-            <li           ><a href="about" name="about">实验室简介</a></li>
+            <li           ><a href="activity" name="about">实验室简介</a></li>
             <li><a href="memberlist" name="show">实验室成员</a></li>
             <li><a href="article_list" name="new">论文及项目</a></li>
             <li><a href="contact" name="message">联系我们</a>
