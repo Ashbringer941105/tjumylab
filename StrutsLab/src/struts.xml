@@ -30,6 +30,10 @@
         <action name="header" >  
             <result>/header.jsp</result>  
         </action> 
+        
+        <action name="article_list_content" >  
+            <result>/article_list_content.jsp</result>  
+        </action> 
     </package> 
 
 </struts>

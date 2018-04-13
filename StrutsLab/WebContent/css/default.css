@@ -14939,10 +14939,10 @@ tbody.am-collapse.am-in {
           box-shadow: 0 0 2px 2px #ffffff;
 }
 .am-prev {
-  background: url('../images/prev.png');
+  background: url('../images/prevs.png');
 }
 .am-next {
-  background: url("../images/next.png");
+  background: url("../images/nexts.png");
 }
 .am-slider-default {
   margin: 0;
