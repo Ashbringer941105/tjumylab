@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50634
 File Encoding         : 65001
 
-Date: 2018-04-12 22:55:43
+Date: 2018-04-13 09:30:21
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,13 +20,13 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `activity`;
 CREATE TABLE `activity` (
-  `activity_id` int(11) NOT NULL,
-  `activity_name` varchar(255) NOT NULL,
-  `activity_introduction` varchar(255) DEFAULT NULL,
+  `activity_id` int(11) NOT NULL AUTO_INCREMENT,
+  `activity_name` varchar(255) DEFAULT NULL,
+  `activity_introduction` text,
   `activity_imagepath` varchar(255) DEFAULT NULL,
-  `activity_date` date DEFAULT NULL,
+  `activity_date` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`activity_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of activity
@@ -41,9 +41,9 @@ CREATE TABLE `paper` (
   `paper_name` varchar(255) DEFAULT NULL,
   `paper_author` varchar(255) DEFAULT NULL,
   `paper_imagepath` varchar(255) DEFAULT NULL,
-  `paper_introduction` varchar(255) DEFAULT NULL,
+  `paper_introduction` text,
   `paper_link` varchar(255) DEFAULT NULL,
-  `paper_date` date DEFAULT NULL,
+  `paper_date` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`paper_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -59,9 +59,9 @@ CREATE TABLE `project` (
   `project_id` int(11) NOT NULL,
   `project_name` varchar(255) DEFAULT NULL,
   `project_imagepath` varchar(255) DEFAULT NULL,
-  `project_introduction` varchar(255) DEFAULT NULL,
+  `project_introduction` text,
   `project_link` varchar(255) DEFAULT NULL,
-  `project_date` date DEFAULT NULL,
+  `project_date` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
