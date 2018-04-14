@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50634
 File Encoding         : 65001
 
-Date: 2018-04-13 09:30:21
+Date: 2018-04-14 11:16:26
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -26,11 +26,14 @@ CREATE TABLE `activity` (
   `activity_imagepath` varchar(255) DEFAULT NULL,
   `activity_date` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`activity_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of activity
 -- ----------------------------
+INSERT INTO `activity` VALUES ('1', '参加中国计算机视觉大会', '2017年10月12日，实验室成员集体参加了中国计算机视觉大会。', 'images/prcv.jpg', '2017.10.12');
+INSERT INTO `activity` VALUES ('2', '冬季滑雪活动', '2017年12月16日，实验室组织了集体滑雪活动。', 'video/video.mp4', '2017.12.16');
+INSERT INTO `activity` VALUES ('3', '2017脑机媒体会议', '2017年10月15日，实验室举办了脑机媒体会议', 'images/naojimeiti.jpg', '2017.10.15');
 
 -- ----------------------------
 -- Table structure for paper
@@ -100,7 +103,7 @@ CREATE TABLE `student` (
   `student_homepage` varchar(255) DEFAULT '',
   `student_graduateinfo` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`student_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of student
@@ -111,6 +114,7 @@ INSERT INTO `student` VALUES ('3', '宋宗垚', 'male', 'images/songzongyao.jpg'
 INSERT INTO `student` VALUES ('4', '张雪', 'female', 'images/zhangxue.png', '#', '0');
 INSERT INTO `student` VALUES ('5', '周子淇', 'female', 'images/zhouziqi.png', '#', '0');
 INSERT INTO `student` VALUES ('6', '李攀', 'male', 'images/lipan.jpg', '#', '0');
+INSERT INTO `student` VALUES ('7', '闫馨宇', 'female', 'images/yanxinyu.jpg', '#', '0');
 
 -- ----------------------------
 -- Table structure for teacher

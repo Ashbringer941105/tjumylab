@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"  
     pageEncoding="UTF-8"%>  
 <%@ taglib prefix="sx" uri="/struts-dojo-tags" %>
+<%@ page import="java.util.*"%>
+<%@ page import="com.lab.bean.Activity" %>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -64,33 +66,83 @@
                 级。目前经营的范围包括：电子商务平台开发技术支持、技术转让、运维技术服务、大数据、云计算等。大冶市云阿拉丁科技有限公司创建于2015年1月5日，总部位于青铜故里——大冶市。公司致力于帮助传统行业实现在互联网时代的转型升级。目前经营的范围包括：电子商务平台开发技术支持、技术转让、运维技术服务、大数据、云计算等。大冶市云阿拉丁科技有限公司创建于2015年1月5日，总部位于青铜故里——大冶市。公司致力于帮助传统行业实现在互联网时代的转型升级。目前经营的范围包括：电子商务平台开发技术支持、技术转让、运维技术服务、大数据、云计算等。
             </p>
         </article>
-
-
     </div>
+<%
+//从session中获取sliderimage。然后展示在界面中
 
-    <div class="about-box">
+ArrayList<Activity> activities = (ArrayList<Activity>) request
+		.getSession().getAttribute("activities");
+if (activities.size() == 0) {
+	out.print("没有数据");
+}else{
+	for(Activity activity : activities){
+		//判断是否是MP4类型的文件
+		boolean  isMP4 = activity.getImagePath().endsWith("mp4");
+		if(isMP4){
+			%>
+			<div class="about-box">
         <div class="about-leftbox">
-            <img src="images/prcv.jpg" alt="">
-        </div>
-        <div class="about-rightbox">
-            <h1>参加中国计算机视觉大会</h1>
-<!--             <p>LABORATORY CULTURE</p> -->
-            <article>2017年10月12日，实验室成员集体参加了中国计算机视觉大会。中国计算机视觉大会由中国计算机学会（CCF）主办，计算机视觉专委会承办的中国计算机视觉大会（CCCV2017）在天津隆重举行。这是一场计算机视觉领域的盛会，旨在为从事计算机视觉研究的学生、老师和工业界人事提供一个学术交流平台，提高国内在计算机视觉领域的研究水平。</br></br></article>
-        </div>
-    </div>
-    </br></br></br>
-    <div class="about-box">
-        <div class="about-leftbox">
-<video width="500" height="450" controls ><source src="video/video.mp4" type="video/mp4"> </video>
+<video width="500" height="450" controls ><source src=<%=activity.getImagePath() %> type="video/mp4"> </video>
         </div>
         <div class="about-rightbox">
             <h1>实验室活动</h1>
              <p>LABORATORY ACTIVITY</p>
-            <h2>冬季滑雪</h2>
-            <article>2017年X月XX日，实验室组织了集体滑雪活动。</article>
+            <h2><%=activity.getName() %></h2>
+            <article><%=activity.getIntroduction() %></article>
         </div>
     </div>
 </br></br>
+			<%
+		}else{
+			%>
+			<div class="about-box">
+        <div class="about-leftbox">
+            <img src=<%=activity.getImagePath() %> alt="">
+        </div>
+        <div class="about-rightbox">
+        <h1>实验室活动</h1>
+             <p>LABORATORY ACTIVITY</p>
+            <h1><%=activity.getName() %></h1>
+<!--             <p>LABORATORY CULTURE</p> -->
+
+            <article><%=activity.getIntroduction() %></article>
+        </div>
+    </div>
+		</br></br>
+			
+			<%
+		}
+		
+		%>
+<!-- 		<div class="about-box"> -->
+<!--         <div class="about-leftbox"> -->
+<%--             <img src=<%=activity.getImagePath() %> alt=""> --%>
+<!--         </div> -->
+<!--         <div class="about-rightbox"> -->
+<%--             <h1><%=activity.getName() %></h1> --%>
+<!-- <!--             <p>LABORATORY CULTURE</p> --> -->
+<%--             <article><%=activity.getIntroduction() %></article> --%>
+<!--         </div> -->
+<!--     </div> -->
+<!-- 		</br></br></br> -->
+		<%
+	}
+}
+
+%>
+    
+<!--     <div class="about-box"> -->
+<!--         <div class="about-leftbox"> -->
+<!-- <video width="500" height="450" controls ><source src="video/video.mp4" type="video/mp4"> </video> -->
+<!--         </div> -->
+<!--         <div class="about-rightbox"> -->
+<!--             <h1>实验室活动</h1> -->
+<!--              <p>LABORATORY ACTIVITY</p> -->
+<!--             <h2>冬季滑雪</h2> -->
+<!--             <article>2017年X月XX日，实验室组织了集体滑雪活动。</article> -->
+<!--         </div> -->
+<!--     </div> -->
+<!-- </br></br> -->
 <!--     <div class="about-team"> -->
 <!--         <div class="am-u-sm-12 am-u-md-12 am-u-lg-12"> -->
 <!--             <p >设计团队</p> -->

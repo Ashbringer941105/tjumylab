@@ -25,6 +25,8 @@ import com.opensymphony.xwork2.ActionSupport;
 * 2018年4月13日     songzongyao           v1.0.0               修改原因
  */
 public class IndexAction extends ActionSupport {
+	
+	@Override
 	public String execute() throws Exception {
 		// 获得ActionContext
 		ActionContext ac = ActionContext.getContext();
