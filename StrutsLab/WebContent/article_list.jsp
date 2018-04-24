@@ -32,18 +32,53 @@
 <sx:head/>
 </head>
 <body>
-<div id="header">
-  <sx:div  href="header">
-  </sx:div>
-</div>
-<div class="am-slider am-slider-default" data-am-flexslider="{playAfterPaused: 8000}">
-    <ul class="am-slides">
-        <li><img src="images/banner.jpg" alt="" ></li>
-        <li><img src="images/banner.jpg" alt="" ></li>
-        <li><img src="images/banner.jpg" alt="" ></li>
-        <li><img src="images/banner.jpg" alt="" ></li>
-    </ul>
-</div>
+<!-- <div id="header"> -->
+<%--   <sx:div  href="header"> --%>
+<%--   </sx:div> --%>
+<!-- </div> -->
+<header>
+    <div class="header-top">
+        <div class="width-center">
+            <div class="header-logo "><img src="images/logo.jpg" alt=""></div>
+            <div class="header-title div-inline">
+                <strong style="font-size:40px">高维信息处理实验室</strong>
+                <span>http://47.95.200.51:8080/StrutsLab/index</span>
+            </div>
+
+<!--             <div class="search-box div-inline"> -->
+<!--                 <div class="input-box"><input type="text" name="" placeholder="             请输入关键字"></div> -->
+<!--                 <div class="search-botton"></div> -->
+<!--             </div> -->
+        </div>
+    </div>
+    <div class="header-nav">
+        <button class="am-show-sm-only am-collapsed font f-btn" data-am-collapse="{target: '.header-nav'}">Menu <i
+                class="am-icon-bars"></i></button>
+        <nav>
+        <ul class="header-nav-ul am-collapse am-in">
+<!--         首页链接 -->
+            <li class="on"><a href="index" name="index">首页</a></li>
+            <li           ><a href="activity" name="about">实验室简介</a></li>
+            <li><a href="memberlist" name="show">实验室成员</a></li>
+            <li><a href="article_list" name="new">论文及项目</a></li>
+            <li><a href="contact" name="message">联系我们</a>
+<!--                 <div class="secondary-menu"> -->
+
+<!--                     <ul><li><a href="message.html" class="message"></a></li></ul> -->
+<!--                 </div> -->
+            </li>
+        </ul>
+        </nav>
+    </div>
+</header>
+<!-- <div class="am-slider am-slider-default" data-am-flexslider="{playAfterPaused: 8000}"> -->
+<!--     <ul class="am-slides"> -->
+<!--         <li><img src="images/banner.jpg" alt="" ></li> -->
+<!--         <li><img src="images/banner.jpg" alt="" ></li> -->
+<!--         <li><img src="images/banner.jpg" alt="" ></li> -->
+<!--         <li><img src="images/banner.jpg" alt="" ></li> -->
+<!--     </ul> -->
+<!-- </div> -->
 <div>
     <header class="header-article-list">
         <div class="article-position">论文</div>
