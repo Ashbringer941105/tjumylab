@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="sx" uri="/struts-dojo-tags"%>
-<%@ page import="com.lab.bean.Teacher"%>
-<%@ page import="com.lab.bean.Student"%>
 <%@ page import="com.lab.bean.Member" %>
 <%@ page import="java.util.*"%>
 <!DOCTYPE html>
