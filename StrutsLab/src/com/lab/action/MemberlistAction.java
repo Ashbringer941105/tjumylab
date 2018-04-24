@@ -5,9 +5,8 @@ import java.util.ArrayList;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
-import com.lab.bean.Student;
-import com.lab.bean.Teacher;
 import com.lab.utils.GetData;
+import com.lab.bean.Member;
 
 /**
  * 
@@ -25,6 +24,7 @@ import com.lab.utils.GetData;
 * Date         Author          Version            Description
 *---------------------------------------------------------*
 * 2018年4月13日     songzongyao           v1.0.0               修改原因
+* 2018年4月23日   宋宗垚									将teacher和student合并为一个member类
  */
 public class MemberlistAction extends ActionSupport {
 	
@@ -34,8 +34,8 @@ public class MemberlistAction extends ActionSupport {
 		ActionContext ac = ActionContext.getContext();
 		//获得所有的teacher
 		GetData gd = new GetData();
-		ArrayList<Teacher> teacherlist = gd.getTeachers();
-		ArrayList<Student> studentlist = gd.getStudents();
+		ArrayList<Member> teacherlist = gd.getMembers("教师");
+		ArrayList<Member> studentlist = gd.getMembers("在校研究生");
 		//测试用检查是否得到信息的tt
 		int tl = teacherlist.size();
 		int sl = studentlist.size();

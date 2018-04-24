@@ -6,9 +6,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import com.lab.bean.Activity;
+import com.lab.bean.Member;
 import com.lab.bean.SliderImage;
-import com.lab.bean.Student;
-import com.lab.bean.Teacher;
 import com.lab.dao.DataBaseDao;
 
 /**
@@ -46,24 +45,26 @@ public class GetData {
 	 *        ---------------------------------------------------------*
 	 *        2018年4月13日 songzongyao v1.0.0 新建函数
 	 */
-	public ArrayList<Teacher> getTeachers() {
-		ArrayList<Teacher> teachers = new ArrayList<Teacher>();
+	public ArrayList<Member> getMembers(String rolename) {
+		ArrayList<Member> members = new ArrayList<Member>();
 		DataBaseDao db = new DataBaseDao();
 		Connection connection = db.getConnection();
-		String sql = "select * from teacher";
+		String sql = "select * from member";
 		// 执行SQL语句 用rs接收查询结果
 		ResultSet rs = db.findSQL(connection, sql);
 		// 然后对rs中的数据进行接收和处理
 		try {
 			while (rs.next()) {
-				Teacher teacher = new Teacher();
-				teacher.setId(rs.getInt("teacher_id"));
-				teacher.setName(rs.getString("teacher_name"));
-				teacher.setImagePath(rs.getString("teacher_imagepath"));
-				teacher.setHomePagePath(rs.getString("teacher_homepage"));
-				teacher.setGender(rs.getString("teacher_gender"));
-				teachers.add(teacher);
-
+				Member member = new Member();
+				member.setId(rs.getInt("id"));
+				member.setGender(rs.getString("gender"));
+				member.setHomepage(rs.getString("homepage"));
+				member.setImagepath(rs.getString("imagepath"));
+				member.setName(rs.getString("name"));
+				member.setRolename(rs.getString("rolename"));
+				if(member.getRolename().equals(rolename)){
+					members.add(member);
+				}
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -79,7 +80,7 @@ public class GetData {
 			e.printStackTrace();
 		}
 
-		return teachers;
+		return members;
 
 	}
 
@@ -88,7 +89,7 @@ public class GetData {
 	 * @Function: GetData.java
 	 * @Description: 获得数据库中student表中的所有数据
 	 * 
-	 * @return：返回一个ArrayList<Student>
+	 * @return：返回一个ArrayList<Member>
 	 * @throws：异常描述
 	 * 
 	 * @version: v1.0.0
@@ -99,41 +100,41 @@ public class GetData {
 	 *        ---------------------------------------------------------*
 	 *        2018年4月13日 songzongyao v1.0.0 新建函数
 	 */
-	public ArrayList<Student> getStudents() {
-		ArrayList<Student> students = new ArrayList<Student>();
-		DataBaseDao db = new DataBaseDao();
-		Connection connection = db.getConnection();
-		String sql = "select * from student";
-		// 执行SQL语句 用rs接收查询结果
-		ResultSet rs = db.findSQL(connection, sql);
-		// 然后对rs中的数据进行接收和处理
-		try {
-			while (rs.next()) {
-				Student student = new Student();
-				student.setId(rs.getInt("student_id"));
-				student.setName(rs.getString("student_name"));
-				student.setImagePath(rs.getString("student_imagepath"));
-				student.setHomePage(rs.getString("student_homepage"));
-				student.setGender(rs.getString("student_gender"));
-				student.setGraduateInfo(rs.getString("student_graduateinfo"));
-				students.add(student);
-
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		try {
-			rs.close();
-		} catch (SQLException e1) {
-			e1.printStackTrace();
-		}
-		try {
-			connection.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return students;
-	}
+//	public ArrayList<Member> getStudents() {
+//		ArrayList<Member> students = new ArrayList<Member>();
+//		DataBaseDao db = new DataBaseDao();
+//		Connection connection = db.getConnection();
+//		String sql = "select * from student";
+//		// 执行SQL语句 用rs接收查询结果
+//		ResultSet rs = db.findSQL(connection, sql);
+//		// 然后对rs中的数据进行接收和处理
+//		try {
+//			while (rs.next()) {
+//				Student student = new Student();
+//				student.setId(rs.getInt("student_id"));
+//				student.setName(rs.getString("student_name"));
+//				student.setImagePath(rs.getString("student_imagepath"));
+//				student.setHomePage(rs.getString("student_homepage"));
+//				student.setGender(rs.getString("student_gender"));
+//				student.setGraduateInfo(rs.getString("student_graduateinfo"));
+//				students.add(student);
+//
+//			}
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+//		try {
+//			rs.close();
+//		} catch (SQLException e1) {
+//			e1.printStackTrace();
+//		}
+//		try {
+//			connection.close();
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+//		return students;
+//	}
 
 	/**
 	 * 

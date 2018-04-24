@@ -3,6 +3,7 @@
 <%@ taglib prefix="sx" uri="/struts-dojo-tags"%>
 <%@ page import="com.lab.bean.Teacher"%>
 <%@ page import="com.lab.bean.Student"%>
+<%@ page import="com.lab.bean.Member" %>
 <%@ page import="java.util.*"%>
 <!DOCTYPE html>
 <html lang="zh-cn">
@@ -78,16 +79,16 @@
 			<ul>
 				<%
 					//         从session中获得所有教师信息teacherlist的代码
-					ArrayList<Teacher> teacherlist = (ArrayList<Teacher>) request
+					ArrayList<Member> teacherlist = (ArrayList<Member>) request
 							.getSession().getAttribute("teacherlist");
 					if (teacherlist.size() == 0) {
 						out.print("没有数据");
 					} else {
-						for (Teacher teacher : teacherlist) {
+						for (Member teacher : teacherlist) {
 				%>
-				<li><a href=<%=teacher.getHomePagePath()%>>
+				<li><a href=<%=teacher.getHomepage()%>>
 						<div class="img-box">
-							<img src=<%=teacher.getImagePath()%>>
+							<img src=<%=teacher.getImagepath()%>>
 							<p><%=teacher.getName()%></p>
 						</div>
 				</a></li>
@@ -105,16 +106,16 @@
 			<ul>
 				<%
 					//      从session中获得所有研究生信息studentlist的代码
-					ArrayList<Student> Studentlist = (ArrayList<Student>) request
+					ArrayList<Member> Studentlist = (ArrayList<Member>) request
 							.getSession().getAttribute("studentlist");
 					if (Studentlist.size() == 0) {
 						out.print("没有数据");
 					} else {
-						for (Student student : Studentlist) {
+						for (Member student : Studentlist) {
 				%>
-				<li><a href=<%=student.getHomePage()%>>
+				<li><a href=<%=student.getHomepage()%>>
 						<div class="img-box">
-							<img src=<%=student.getImagePath()%>>
+							<img src=<%=student.getImagepath()%>>
 							<p><%=student.getName()%></p>
 						</div>
 				</a></li>
