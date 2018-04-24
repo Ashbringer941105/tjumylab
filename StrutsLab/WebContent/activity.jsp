@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>  
 <%@ taglib prefix="sx" uri="/struts-dojo-tags" %>
 <%@ page import="java.util.*"%>
+<%@ page import="com.lab.bean.SliderImage"%>
 <%@ page import="com.lab.bean.Activity" %>
 <!DOCTYPE html>
 <html lang="zh-cn">
@@ -40,10 +41,21 @@
 </div>
 <div class="am-slider am-slider-default" data-am-flexslider="{playAfterPaused: 8000}">
     <ul class="am-slides">
-        <li><img src="./images/banner2.jpg" alt="" ></li>
-        <li><img src="./images/banner2.jpg" alt="" ></li>
-        <li><img src="./images/banner2.jpg" alt="" ></li>
-        <li><img src="./images/banner2.jpg" alt="" ></li>
+    <%
+				//从session中获取sliderimage。然后展示在界面中
+				ArrayList<SliderImage> sliderImages = (ArrayList<SliderImage>) request
+						.getSession().getAttribute("sliderImages");
+				if (sliderImages.size() == 0) {
+					out.print("没有数据");
+				} else {
+					for (SliderImage sliderImage : sliderImages) {
+			%>
+			<li><img src=<%=sliderImage.getImagePath()%>
+				alt=<%=sliderImage.getInfo()%>></li>
+			<%
+				}
+				}
+			%>
     </ul>
 </div>
 

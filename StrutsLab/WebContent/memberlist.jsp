@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="sx" uri="/struts-dojo-tags"%>
 <%@ page import="com.lab.bean.Member" %>
+<%@ page import="com.lab.bean.SliderImage"%>
 <%@ page import="java.util.*"%>
 <!DOCTYPE html>
 <html lang="zh-cn">
@@ -39,15 +40,7 @@
 		<sx:div href="header">
 		</sx:div>
 	</div>
-	<div class="am-slider am-slider-default"
-		data-am-flexslider="{playAfterPaused: 8000}">
-		<ul class="am-slides">
-			<li><img src="images/banner.jpg" alt=""></li>
-			<li><img src="images/banner.jpg" alt=""></li>
-			<li><img src="images/banner.jpg" alt=""></li>
-			<li><img src="images/banner.jpg" alt=""></li>
-		</ul>
-	</div>
+	<!-- 轮播图片插入位置 -->
 	<section class="pro-list">
 		<!--     <aside class="pro-leftsidebar"> -->
 		<!--         <ul> -->

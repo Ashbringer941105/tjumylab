@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"  
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="sx" uri="/struts-dojo-tags" %>
+<%@ page import="com.lab.bean.SliderImage"%>
+<%@ page import="java.util.*"%>
     <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -36,14 +38,7 @@
   <sx:div  href="header">
   </sx:div>
 </div>
-<div class="am-slider am-slider-default" data-am-flexslider="{playAfterPaused: 8000}">
-    <ul class="am-slides">
-        <li><img src="images/banner.jpg" alt="" ></li>
-        <li><img src="images/banner.jpg" alt="" ></li>
-        <li><img src="images/banner.jpg" alt="" ></li>
-        <li><img src="images/banner.jpg" alt="" ></li>
-    </ul>
-</div>
+<!-- 轮播图片插入位置 -->
 <div>
     <header class="header-article-list">
         <div class="contact-left">联系我们</div>

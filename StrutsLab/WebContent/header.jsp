@@ -7,7 +7,7 @@
             <div class="header-logo "><img src="images/logo.jpg" alt=""></div>
             <div class="header-title div-inline">
                 <strong style="font-size:40px">高维信息处理实验室</strong>
-                <span>http://localhost:8080/StrutsLab/index</span>
+                <span>http://47.95.200.51:8080/StrutsLab/index</span>
             </div>
 
 <!--             <div class="search-box div-inline"> -->
