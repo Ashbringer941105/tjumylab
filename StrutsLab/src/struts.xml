@@ -20,7 +20,7 @@
             <result>/contact.jsp</result>  
         </action> 
         
-        <action name="article_list" >  
+        <action name="article_list" class="com.lab.action.ArticalListAction">  
             <result>/article_list.jsp</result>  
         </action> 
         

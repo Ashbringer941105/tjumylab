@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 import com.lab.bean.Activity;
 import com.lab.bean.Member;
+import com.lab.bean.Paper;
+import com.lab.bean.Project;
 import com.lab.bean.SliderImage;
 import com.lab.dao.DataBaseDao;
 
@@ -32,18 +34,16 @@ public class GetData {
 	/**
 	 * 
 	 * @Function: GetData.java
-	 * @Description: 获得数据库中teacher表中所有的数据，
+	 * @Description: 根据传入的rolename角色名字（），去数据库中的member表中查找相应的人员，并放在一个ArrayList钟返回
 	 * 
-	 * @return：返回一个ArrayList<Teacher>
+	 * @param rolename 是需要查询的成员的角色名字，可选项为1、教师   2、在校研究生
+	 * @return：返回一个ArrayList<Member>
 	 * @throws：异常描述
 	 * 
-	 * @version: v1.0.0
+	 * @version: v2.0.0
 	 * @author: songzongyao
 	 * @date: 2018年4月13日 上午9:20:25
 	 * 
-	 *        Modification History: Date Author Version Description
-	 *        ---------------------------------------------------------*
-	 *        2018年4月13日 songzongyao v1.0.0 新建函数
 	 */
 	public ArrayList<Member> getMembers(String rolename) {
 		ArrayList<Member> members = new ArrayList<Member>();
@@ -84,58 +84,7 @@ public class GetData {
 
 	}
 
-	/**
-	 * 
-	 * @Function: GetData.java
-	 * @Description: 获得数据库中student表中的所有数据
-	 * 
-	 * @return：返回一个ArrayList<Member>
-	 * @throws：异常描述
-	 * 
-	 * @version: v1.0.0
-	 * @author: songzongyao
-	 * @date: 2018年4月13日 上午9:21:40
-	 * 
-	 *        Modification History: Date Author Version Description
-	 *        ---------------------------------------------------------*
-	 *        2018年4月13日 songzongyao v1.0.0 新建函数
-	 */
-//	public ArrayList<Member> getStudents() {
-//		ArrayList<Member> students = new ArrayList<Member>();
-//		DataBaseDao db = new DataBaseDao();
-//		Connection connection = db.getConnection();
-//		String sql = "select * from student";
-//		// 执行SQL语句 用rs接收查询结果
-//		ResultSet rs = db.findSQL(connection, sql);
-//		// 然后对rs中的数据进行接收和处理
-//		try {
-//			while (rs.next()) {
-//				Student student = new Student();
-//				student.setId(rs.getInt("student_id"));
-//				student.setName(rs.getString("student_name"));
-//				student.setImagePath(rs.getString("student_imagepath"));
-//				student.setHomePage(rs.getString("student_homepage"));
-//				student.setGender(rs.getString("student_gender"));
-//				student.setGraduateInfo(rs.getString("student_graduateinfo"));
-//				students.add(student);
-//
-//			}
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		}
-//		try {
-//			rs.close();
-//		} catch (SQLException e1) {
-//			e1.printStackTrace();
-//		}
-//		try {
-//			connection.close();
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		}
-//		return students;
-//	}
-
+	
 	/**
 	 * 
 	 * @Function: GetData.java
@@ -234,6 +183,96 @@ public class GetData {
 			e.printStackTrace();
 		}
 		return activities;
+	}
+	
+	
+	/**
+	 * 
+	* @Function: GetData.java
+	* @Description: 获得数据库中project表中的所有信息并且返回一个ArrayList<Project>
+	*
+	* @return：ArrayList<Project>
+	* @throws：异常描述
+	*
+	* @version: v1.0.0
+	* @author: songzongyao
+	* @date: 2018年4月25日 上午9:10:11 
+	*
+	* Modification History:
+	* Date         Author          Version            Description
+	*---------------------------------------------------------*
+	* 2018年4月25日     songzongyao           v1.0.0               修改原因
+	 */
+	public ArrayList<Project> getProjects(){
+		ArrayList<Project> projects = new ArrayList<Project>();
+		DataBaseDao db = new DataBaseDao();
+		Connection connection = db.getConnection();
+		String sql = "select * from project";
+		// 执行SQL语句 用rs接收查询结果
+		ResultSet rs = db.findSQL(connection, sql);
+		// 然后对rs中的数据进行接收和处理
+		try {
+			while(rs.next()){
+				Project project = new Project();
+				project.setId(rs.getInt("project_id"));
+				project.setDate(rs.getString("project_date"));
+				project.setImagePath(rs.getString("project_imagepath"));
+				project.setIntroduction(rs.getString("project_introduction"));
+				project.setLink(rs.getString("project_link"));
+				project.setName(rs.getString("project_name"));
+				projects.add(project);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		try {
+			rs.close();
+		} catch (SQLException e1) {
+			e1.printStackTrace();
+		}
+		try {
+			connection.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return projects;
+	}
+	
+	public ArrayList<Paper> getPapers(){
+		ArrayList<Paper> papers = new ArrayList<Paper>();
+		DataBaseDao db = new DataBaseDao();
+		Connection connection = db.getConnection();
+		String sql = "select * from paper";
+		// 执行SQL语句 用rs接收查询结果
+		ResultSet rs = db.findSQL(connection, sql);
+		// 然后对rs中的数据进行接收和处理
+		try {
+			while(rs.next()){
+				Paper paper = new Paper();
+				paper.setId(rs.getInt("paper_id"));
+				paper.setAuthor(rs.getString("paper_author"));
+				paper.setDate(rs.getString("paper_date"));
+				paper.setImagePath(rs.getString("paper_imagepath"));
+				paper.setIntroduction(rs.getString("paper_introduction"));
+				paper.setLink(rs.getString("paper_link"));
+				paper.setName(rs.getString("paper_name"));
+				papers.add(paper);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		try {
+			rs.close();
+		} catch (SQLException e1) {
+			e1.printStackTrace();
+		}
+		try {
+			connection.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return papers;
+		
 	}
 
 }
