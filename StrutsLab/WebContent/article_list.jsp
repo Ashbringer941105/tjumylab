@@ -199,12 +199,14 @@
 				<li>
 					<div class="article-date">
 						<!--                     <strong>01</strong> -->
-						<p><%=project.getDate()%></p>
+						<img alt="没有图片" src="images/jinyadong.jpg" width="100px" height="80px" >
+<%-- 						<%=project.getDate()%> --%>
 					</div>
 					<div class="article-info">
 						<a href="article_list_content">
 							<h3><%=project.getName()%></h3>
 							<p><%=project.getIntroduction()%></p>
+							
 						</a>
 					</div>
 				</li>

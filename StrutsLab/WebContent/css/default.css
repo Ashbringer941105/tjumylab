@@ -15235,10 +15235,10 @@ tbody.am-collapse.am-in {
 .article-content .article-date {
   width: 11.18%;
   height: 0.086%;
-  background: #eeeeee;
+  background: #000; 
   display: inline-block;
   text-align: center;
-  padding: 23px 0;
+  padding: 0px 0;
   margin: 31px 86px 31px 0;
 }
 .article-content .article-date strong {
